@@ -1,6 +1,9 @@
-import type { ElectronAPI } from '@electron-toolkit/preload'
-
 import { isStageTamagotchi } from './environment'
+
+// Web builds keep this surface so shared code type-checks without Electron packages.
+export interface ElectronAPI {
+  ipcRenderer: unknown
+}
 
 export interface ElectronWindow<CustomApi = unknown> {
   electron: ElectronAPI

@@ -147,6 +147,8 @@ export default defineConfig({
     'pnpm/json-enforce-catalog': 'off',
     'pnpm/json-valid-catalog': 'off',
     'pnpm/yaml-enforce-settings': 'off',
+    // Desktop and mobile removals leave catalog entries unused in this fork.
+    'pnpm/yaml-no-unused-catalog-item': 'off',
     // 'sonarjs/cognitive-complexity': 'off',
     // 'sonarjs/no-commented-code': 'off',
     // 'sonarjs/pseudo-random': 'off',

@@ -27,7 +27,9 @@ export interface BeatSyncDetector {
   readonly source: AudioNode | undefined
 }
 
-export type CreateBeatSyncDetectorOptions = { env: StageEnvironment.Web }
+export interface CreateBeatSyncDetectorOptions {
+  env: StageEnvironment.Web
+}
 
 export function createBeatSyncDetector(options: CreateBeatSyncDetectorOptions): BeatSyncDetector {
   let context: AudioContext | undefined
